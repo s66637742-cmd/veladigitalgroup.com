@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>VELA DIGITAL LTD</title>
+  <script>
+    // GitHub Pages SPA redirect trick
+    var path = window.location.pathname;
+    // Map clean URLs to actual files
+    var routes = {
+      '/ios': '/ios/index.html',
+      '/android': '/android/index.html',
+      '/plan': '/plan/index.html',
+      '/promotion': '/promotion/index.html',
+      '/about': '/about/index.html',
+      '/contact': '/contact/index.html',
+      '/policy': '/policy/index.html',
+    };
+    var target = routes[path.replace(/\/$/, '')] || '/index.html';
+    window.location.replace(target);
+  </script>
+</head>
+<body></body>
+</html>

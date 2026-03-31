@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — VELA DIGITAL LTD</title>
+  <meta name="description" content="Contact VELA DIGITAL LTD. UK mobile app development agency.">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .contact-info-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 20px;
+      transition: all 0.3s;
+    }
+    .contact-info-card:hover {
+      border-color: rgba(59,108,255,0.3);
+      transform: translateX(4px);
+    }
+    .contact-info-card .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .contact-info-card .value {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    @media(max-width:768px){
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <section class="hero" style="min-height:50vh;">
+    <div class="hero-bg">
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag"><span class="dot"></span>Get in Touch</div>
+      <h1>Let's Start<br><span class="grad">Your Project</span></h1>
+      <p>Have a project in mind? Drop us a message and we'll get back to you within 24 hours with an initial assessment.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section>
+    <div class="contact-grid fade-up">
+      <!-- LEFT: info -->
+      <div>
+        <div class="section-label">Contact information</div>
+        <h2 class="section-title" style="margin-bottom:36px;">Reach us<br>anytime</h2>
+
+        <div class="contact-info-card">
+          <div class="label">📧 Email</div>
+          <div class="value">hello@veladigital.co.uk</div>
+        </div>
+        <div class="contact-info-card">
+          <div class="label">📍 Address</div>
+          <div class="value">69 Loose Road<br>MAIDSTONE, ME15 7BY<br>United Kingdom</div>
+        </div>
+        <div class="contact-info-card">
+          <div class="label">🏢 Company</div>
+          <div class="value">VELA DIGITAL LTD<br><span style="font-size:14px;color:var(--text-muted);font-weight:400;">Company number: 16943334</span></div>
+        </div>
+        <div class="contact-info-card">
+          <div class="label">⏰ Response Time</div>
+          <div class="value">Within 24 hours<br><span style="font-size:14px;color:var(--text-muted);font-weight:400;">Mon–Fri, 9:00–18:00 GMT</span></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: form -->
+      <div>
+        <div class="contact-form-wrap">
+          <h3 style="font-family:var(--font-display);font-size:24px;font-weight:800;margin-bottom:24px;">Send us a message</h3>
+          <form id="contactPageForm">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Company">
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Tell us about your project..." style="min-height:140px;"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+            <p class="form-legal" style="margin-top:14px;">
+              By submitting, you agree to our <a href="../policy/index.html">Privacy Policy</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY REACH OUT -->
+  <section>
+    <div class="section-label">What happens next</div>
+    <h2 class="section-title">After you<br>reach out</h2>
+    <p class="section-sub">Here's exactly what to expect when you contact VELA DIGITAL.</p>
+    <div class="grid-3 fade-up">
+      <div class="card">
+        <div class="card-icon">📬</div>
+        <h3>1. We Respond</h3>
+        <p>You'll hear from a real person within 24 hours — not a chatbot. We'll acknowledge your message and ask any clarifying questions.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📞</div>
+        <h3>2. Discovery Call</h3>
+        <p>A 30-minute video call to understand your goals, timeline, and budget. No hard sell — just an honest conversation.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📄</div>
+        <h3>3. Proposal</h3>
+        <p>A detailed project proposal with scope, timeline, and pricing within 3 business days of our call.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="../layout.js"></script>
+<script src="../script.js"></script>
+<script>
+  document.getElementById('contactPageForm')?.addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = e.target.querySelector('.btn-submit');
+    btn.textContent = 'Sending...';
+    setTimeout(() => {
+      btn.textContent = '✓ Message sent! We\'ll be in touch soon.';
+      btn.style.background = 'linear-gradient(135deg, #00c853, #00e676)';
+    }, 1000);
+  });
+</script>
+</body>
+</html>
