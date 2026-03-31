@@ -23,7 +23,7 @@
 
   const headerHTML = `
 <header>
-  <a href="${r('index.html')}" class="logo">
+  <a href="${r('../')}" class="logo">
     <div class="logo-mark">V</div>
     VELA DIGITAL LTD
   </a>
@@ -38,14 +38,14 @@
 <div class="mobile-menu-overlay" id="menuOverlay"></div>
 <div class="mobile-menu" id="mobileMenu">
   <nav>
-    <a href="${r('index.html')}">Home</a>
-    <a href="${r('ios/index.html')}">iOS Development</a>
-    <a href="${r('android/index.html')}">Android Development</a>
-    <a href="${r('plan/index.html')}">Development Plan</a>
-    <a href="${r('promotion/index.html')}">App Promotion</a>
-    <a href="${r('about/index.html')}">About Us</a>
-    <a href="${r('contact/index.html')}">Contacts</a>
-    <a href="${r('policy/index.html')}">Privacy Policy</a>
+    <a href="${r('../')}">Home</a>
+    <a href="${r('ios/')}">iOS Development</a>
+    <a href="${r('android/')}">Android Development</a>
+    <a href="${r('plan/')}">Development Plan</a>
+    <a href="${r('promotion/')}">App Promotion</a>
+    <a href="${r('about/')}">About Us</a>
+    <a href="${r('contact/')}">Contacts</a>
+    <a href="${r('policy/')}">Privacy Policy</a>
   </nav>
 </div>`;
 
@@ -73,17 +73,17 @@
   <div class="footer-grid">
     <div class="footer-col">
       <h4>Offers</h4>
-      <a href="${r('ios/index.html')}">iOS Development</a>
-      <a href="${r('android/index.html')}">Android Development</a>
-      <a href="${r('plan/index.html')}">Development Plan</a>
-      <a href="${r('promotion/index.html')}">App Promotion</a>
+      <a href="${r('ios/')}">iOS Development</a>
+      <a href="${r('android/')}">Android Development</a>
+      <a href="${r('plan/')}">Development Plan</a>
+      <a href="${r('promotion/')}">App Promotion</a>
     </div>
     <div class="footer-col">
       <h4>Company</h4>
-      <a href="${r('index.html')}">Home</a>
-      <a href="${r('about/index.html')}">About Us</a>
-      <a href="${r('contact/index.html')}">Contacts</a>
-      <a href="${r('policy/index.html')}">Privacy Policy</a>
+      <a href="${r('../')}">Home</a>
+      <a href="${r('about/')}">About Us</a>
+      <a href="${r('contact/')}">Contacts</a>
+      <a href="${r('policy/')}">Privacy Policy</a>
     </div>
     <div class="footer-col">
       <h4>Legal</h4>
